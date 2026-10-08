@@ -14,7 +14,7 @@ class Program
     {
         while (true)
         {
-            CreateBreakLineInConsole();
+            WriteBreakLineInConsole();
 
             string question = firstRound ? "Would you like to play?" : "Would you like to play again?";
             Console.WriteLine(question);
@@ -22,7 +22,7 @@ class Program
             var keyInfo = Console.ReadKey();
             Console.WriteLine();
             
-            CreateBreakLineInConsole();
+            WriteBreakLineInConsole();
 
             if (keyInfo.KeyChar != 'y')
             {
@@ -50,8 +50,8 @@ class Program
         }
     }
 
-    private static void CreateBreakLineInConsole()
+    private static void WriteBreakLineInConsole()
     {
-        Console.WriteLine("-------------------------------------");
+        Console.WriteLine("------------------------------------------------");
     }
 }
